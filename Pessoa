@@ -1,0 +1,38 @@
+package Metodos;
+
+public class Pessoa {
+
+		String nome;
+		Boolean comendo =true;
+		Boolean andando = true;
+		Boolean falando = true;
+
+		    public Pessoa(String nome) {
+		        this.nome = nome;
+		    }
+
+		    public void comer() {
+		        System.out.println(nome + " está comendo.");
+		    }
+
+		    public void andar() {
+		        System.out.println(nome + " está andando.");
+		    }
+
+		    public void parar() {
+		        System.out.println(nome + " parou de andar.");
+		    }
+
+		    public void falar(String mensagem) {
+		        System.out.println(nome + " diz: \"" + mensagem + "\"");
+		    }
+
+		    public static void main(String[] args) {
+		        Pessoa pessoa = new Pessoa("Lizandro");
+		        
+		        pessoa.andar();
+		        pessoa.parar();
+		        pessoa.comer();
+		        pessoa.falar("Eae mano");
+		    }
+}
